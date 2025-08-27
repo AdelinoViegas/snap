@@ -19,6 +19,9 @@ body{
   width: 550px;
 }
 
+#section-main #aside-right #img-mobile{
+  display: none; 
+}
 
 #section-main #aside-left h1 {
   font-size: 80px;
@@ -83,8 +86,58 @@ body{
     font-size: 40px;
   }
 
+  #section-main #aside-left {
+    width: 300px;
+  }
+
   #section-main #aside-right {
     width: 350px;
     padding:0px;
+  }
+}
+
+@media screen and (max-width: 760px){
+  #section-main{
+    flex-direction: column-reverse;
+  }
+  
+  #section-main #aside-left h1 {
+    font-size: 32px;
+    text-align:center;
+  }
+
+  #section-main #aside-left br{
+    display: none;
+  }
+
+  #section-main #aside-left div a{     
+    margin: 10px;
+    align-self: center!important;
+    background-color: black;
+    color:white;
+  }
+
+  #section-main #aside-left div:nth-child(2){
+    margin: 20px;
+    align-items: center;
+  }
+
+  #section-main #aside-left {
+    width: 100%;
+    padding: 0px 10px; 
+  }
+
+  #section-main #aside-right {
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 0px 10px; 
+  }
+
+  #section-main #aside-right #img-mobile{
+    display: block; 
+  }
+
+  #section-main #aside-right #img-desktop{
+    display: none; 
   }
 }
